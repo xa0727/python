@@ -1,8 +1,6 @@
-i=1
-while i<=9:
-    j=1
-    while j<=i:
-        print(f"{j}*{i}={i*j}\t",end='')
-        j+=1
-    i+=1
-    print()# 用来换行
+for i in range(1,10):
+# 控制行数
+    for j in range(1,i+1):
+# 第几行就有几个等式
+        print(f"{j}*{i}={i*j}\t",end='')# 这一行结束前不换行
+    print()# 这一行结束换行
