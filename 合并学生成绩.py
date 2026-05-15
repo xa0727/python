@@ -9,6 +9,8 @@ def merge_grades(dict_a, dict_b):
         else:
             merged[name]=score
     sorted_merged=sorted(merged.items())
+    # print(merged.items())
+    # print(sorted_merged)
     return str(dict(sorted_merged))
 
 

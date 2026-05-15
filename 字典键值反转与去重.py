@@ -4,9 +4,9 @@ def reverse_dict(original):
         if value not in reversed_dict:
             reversed_dict[value]=[]
         reversed_dict[value].append(key)
-    for k,v in reversed_dict.items():
-        if len(v)==1:
-            reversed_dict[k]=v[0]
+    for key,value in reversed_dict.items():
+        if len(value)==1:
+            reversed_dict[key]=value[0]
     return str(reversed_dict)
 
 
